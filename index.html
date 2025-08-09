@@ -27,16 +27,16 @@
             box-shadow: 0 0 15px rgba(0, 0, 255, 0.7); 
         }
         .info {
-            margin-top: 20px;
+            margin-top: 50px;
             font-size: 1.5em;
             color: #8A1600; 
             text-shadow: 0px 0px 8px #704949, 0px 0px 15px #730000, 0px 0px 25px #730000; 
-            letter-spacing: 4.5px; 
+            letter-spacing: 10px; 
             white-space: pre-wrap;
         }
         .text {
             margin-top: 20px;
-            font-size: 3em; 
+            font-size: 10em; 
             color: #FF2900; 
             text-shadow: 0px 0px 8px #704949, 0px 0px 15px #730000, 0px 0px 25px #730000; 
             letter-spacing: 4.5px; 
@@ -44,26 +44,15 @@
     </style>
 </head>
 <body>
-  <div class="text">H4CKED BY ME </div>
+  <div class="text">H4CKED BY ABSI </div>
     <audio autoplay loop>
         <source src="لبيك  موسى العميرة.mp3" type="audio/mpeg">
         Your browser does not support the audio element.
     </audio>
     <div class="info" id="ip-info">
-        <strong>IP: <span id="ip"></span></strong><br>
-        <span><strong>City:</strong> <span id="city"></span></span><br>
-        <span><strong>Region:</strong> <span id="region"></span></span><br>
-    </div>
-    
+        <strong>Nfdlkou Nfdlou Matkhafech <span id="ip"></span></strong><br>
 
-    <script>
-         fetch('https://ipinfo.io/json')
-        .then(response => response.json())
-        .then(data => {
-            delete data.readme;
-            const infoDiv = document.getElementById('ip-info');
-            infoDiv.textContent = JSON.stringify(data, null, 2);
-        });
+   
     </script>
     <script>
 setInterval(() => {
